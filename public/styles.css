@@ -1,0 +1,45 @@
+body { font-family: sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+main { max-width: 1200px; margin: auto; }
+h1, h2 { text-align: center; color: #0056b3; }
+.container { display: flex; gap: 20px; flex-wrap: wrap; }
+.form-card, .list-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; }
+.form-card { min-width: 300px; }
+.list-card { flex-basis: 60%; }
+input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+button:hover { background-color: #0056b3; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
+th { background-color: #007bff; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+
+/* Button Styles */
+.actions-cell button { border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; color: white; margin-right: 5px; }
+.delete-btn { background-color: #dc3545; }
+.delete-btn:hover { background-color: #c82333; }
+.update-btn { background-color: #ffc107; color: #212529; }
+.update-btn:hover { background-color: #e0a800; }
+.save-btn { background-color: #28a745; }
+.save-btn:hover { background-color: #218838; }
+.cancel-btn { background-color: #6c757d; }
+.cancel-btn:hover { background-color: #5a6268; }
+
+/* Styles for inputs inside the table */
+td input { width: 95%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+
+/* Styles for new controls */
+.controls { display: flex; gap: 10px; margin-bottom: 15px; }
+#search-input, #category-filter { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+#search-input { flex-grow: 1; }
+
+/* Style for low stock rows */
+.low-stock { background-color: #fff0f1 !important; color: #a02d2d; }
+
+/* Style for sortable table headers */
+th[data-sort] { cursor: pointer; user-select: none; }
+th[data-sort]:hover { background-color: #0056b3; }
+
+/* FINAL: Style for Logout Button */
+.header-actions { text-align: right; margin-bottom: 15px; }
+#logout-btn { width: auto; padding: 8px 16px; background-color: #dc3545; }
+#logout-btn:hover { background-color: #c82333; }
