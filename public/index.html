@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop Stock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>⚡ ElectroShop Stock Management</h1>
+
+        <div class="header-actions">
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div class="container">
+            <div class="form-card">
+                <h2>Add New Item</h2>
+                <form id="item-form">
+                    <input type="text" id="name" placeholder="Item Name (e.g., iPhone 15)" required>
+                    <input type="text" id="category" placeholder="Category (e.g., Smartphone)" required>
+                    <input type="number" id="price" placeholder="Price" min="0" required>
+                    <input type="number" id="quantity" placeholder="Quantity" min="0" required>
+                    <button type="submit">Add Item</button>
+                </form>
+            </div>
+            <div class="list-card">
+                <h2>Current Stock</h2>
+                <div class="controls">
+                    <input type="text" id="search-input" placeholder="Search by name or category...">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Name ⇅</th>
+                            <th data-sort="category">Category ⇅</th>
+                            <th data-sort="price">Price ⇅</th>
+                            <th data-sort="quantity">Quantity ⇅</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items-list">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
